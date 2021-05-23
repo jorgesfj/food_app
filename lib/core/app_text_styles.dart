@@ -103,4 +103,15 @@ class AppTextStyles {
     fontSize: 17,
     fontWeight: FontWeight.w500,
   );
+
+  static final TextStyle titleFavorites = GoogleFonts.poppins(
+    color: Colors.black,
+    fontSize: 24,
+    fontWeight: FontWeight.w500,
+  );
+  static final TextStyle descriptionFavorites = GoogleFonts.poppins(
+    color: Colors.black,
+    fontSize: 12,
+    fontWeight: FontWeight.w300,
+  );
 }

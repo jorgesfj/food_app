@@ -3,10 +3,11 @@ import 'package:food_app/page_view/pages_controller.dart';
 import 'package:food_app/page_view/widgets/bottom_navig_bar.dart';
 import 'package:food_app/page_view/widgets/bottom_navig_bar_controller.dart';
 import 'package:food_app/screens/cart/cart_screen.dart';
+import 'package:food_app/screens/favourites/fave_screen.dart';
+import 'package:food_app/screens/favourites/widgets/favorites_app_bar_widget.dart';
 import 'package:food_app/screens/home/home_screen.dart';
 import 'package:food_app/screens/home/widgets/home_app_bar_widget.dart';
 import 'package:provider/provider.dart';
-import 'package:food_app/screens/favourites/fave_screen.dart';
 
 class Pages extends StatefulWidget {
   @override
@@ -44,7 +45,8 @@ class _PagesState extends State<Pages> {
         ),
         SafeArea(
           child: Scaffold(
-            body: FaveScreen(),
+            appBar: FavoritesAppBarWidget(),
+            body: FavoritesScreen(),
             backgroundColor: Colors.white,
             bottomNavigationBar: BottomNavigBar(
               bottomNavigBarController: bottomNavigBarController,
